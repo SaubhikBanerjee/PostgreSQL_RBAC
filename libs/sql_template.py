@@ -1,0 +1,5 @@
+create_role_sql = "CREATE ROLE {0} WITH LOGIN PASSWORD {1} "
+select_role_sql = "SELECT rolename from pg_roles WHERE rolename= %(role_name)s"
+count_role_sql = "SELECT COUNT(*) from pg_roles WHERE rolename= %(role_name)s"
+grant_sql = "GRANT ALL ON ALL TABLES IN SCHEMA {0} TO {1} "
+create_schema_sql = "CREATE SCHEMA IF NOT EXISTS {0} AUTHORIZATION {1}"
